@@ -1,8 +1,10 @@
-# Nuxt Component Viewer
+# Nuxt Component Viewer 
 
 Simple and fully dynamic single file alternative to Storyboard for Nuxt, accessable via `/_components`.
 
 ***Demo***: https://stackblitz.com/edit/nuxt-starter-uotxqv
+
+***Note***: Experimental status.
 
 ![screenshot-1](https://github.com/renegadevi/nuxt-component-viewer/blob/6ca97e434ccd52d0949712ca39420529d37b3b5b/.github/screenshot-1.png)
 
