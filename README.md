@@ -4,9 +4,9 @@ Simple and fully dynamic single file alternative to Storyboard for Nuxt, accessa
 
 ***Demo***: https://stackblitz.com/edit/nuxt-starter-uotxqv
 
-![screenshot-1](https://github.com/renegadevi/nuxt-component-viewer/blob//.github/screenshot-1.png)
+![screenshot-1](https://github.com/renegadevi/nuxt-component-viewer/blob/6ca97e434ccd52d0949712ca39420529d37b3b5b/.github/screenshot-1.png)
 
-![screenshot-2](https://github.com/renegadevi/nuxt-component-viewer/blob//.github/screenshot-2.png)
+![screenshot-2](https://github.com/renegadevi/nuxt-component-viewer/blob/6ca97e434ccd52d0949712ca39420529d37b3b5b/.github/screenshot-2.png)
 
 
 ## Features
