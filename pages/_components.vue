@@ -336,8 +336,8 @@ const changeComponent = (componentName) => {
                     menuItem.directory
                   )}em*1.5)`"
                 >
-                  <span class="z-20 flex font-bold capitalize"
-                    ><span
+                  <span class="z-20 flex font-bold capitalize">
+                    <span
                       class="inline-flex rounded-lg bg-gray-100 p-[.5rem] dark:bg-gray-800"
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -360,19 +360,19 @@ const changeComponent = (componentName) => {
                     ></span>
                     <span class="ml-2 mt-1">{{
                       getCategoryName(menuItem.directory)
-                    }}</span></span
-                  >
+                    }}</span>
+                  </span>
 
                   <div
                     v-if="menuItemIndex > 3 || menuItemIndex == 1"
                     class="bottom-[2rem] z-10 mb-4 ml-[-.5rem] mt-2 w-2 border-b-2 border-gray-200 dark:border-gray-700"
                     style="margin-top: -1.1rem"
                   ></div>
-
                   <ul
                     class="mb-[-1rem] ml-4 border-l-2 border-gray-200 pb-7 dark:border-gray-700"
                     :class="{
-                      'pb-0': menuItemIndex == componentTree.length - 1,
+                      '!mb-[-8rem] border-l-2 pb-0':
+                        menuItemIndex == componentTree.length - 1,
                       '!pb-0': componentTree.length < 1,
                     }"
                   >
@@ -384,9 +384,9 @@ const changeComponent = (componentName) => {
                       <button
                         class="ml-3 flex w-full space-x-1"
                         :class="{
-                          'last:mb-[-6rem]':
+                          'last:mb-0 ':
                             menuItemIndex == componentTree.length - 1 &&
-                            componentTree.length > 1,
+                            componentTree.length > 2,
                         }"
                         @click="changeComponent(getComponentPath(item.path))"
                       >
@@ -404,6 +404,7 @@ const changeComponent = (componentName) => {
                       </button>
                     </li>
                   </ul>
+
                   <div
                     v-if="menuItemIndex == componentTree.length - 1"
                     class="h-10"
@@ -787,7 +788,7 @@ const changeComponent = (componentName) => {
   </div>
 </template>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 .showOutline,
 .showOutline * {
   @apply border border-red-500 !important;
