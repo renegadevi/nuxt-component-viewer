@@ -788,7 +788,7 @@ const changeComponent = (componentName) => {
   </div>
 </template>
 
-<style lang="postcss" scoped>
+<style lang="postcss">
 .showOutline,
 .showOutline * {
   @apply border border-red-500 !important;
